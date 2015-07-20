@@ -9,16 +9,13 @@
     <div class="col-md-4"> Done </div>
   </div>
   <div class= "todo-container">
-    <div class="col-md-4">
       <% @notes.each do |note| %>
-        <div class="post" >
+      <div class="col-md-4 post">
+          <%= link_to image_tag("delete_cross.png", class: "delete-icon"), note, method: :delete, data: { confirm: 'Are you sure?'}, class:"delete-link" %>
           <p> <%= note.text %> </p>
-          <%= link_to 'Show', note %>
-          <%= link_to 'Edit', edit_note_path(note) %>
-          <%= link_to 'Destroy', note, method: :delete, data: { confirm: 'Are you sure?' } %>
-        </div>
-        <%end%>
-    </div>
+
+      </div>
+      <%end%>
   </div>
 </div>
 
@@ -26,3 +23,4 @@
 <br>
 
 <%= link_to 'New Note', new_note_path %>
+<div>Icons made by <a href="http://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>             is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>

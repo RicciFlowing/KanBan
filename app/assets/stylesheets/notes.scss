@@ -39,7 +39,17 @@
 
 }
 
+.delete-icon {
+  width: 20px;
+  height: auto;
+}
 
+.delete-link {
+  z-index: 1;
+  position: relative;
+  top: 20px;
+  left: 60px;
+}
 
 .board {
  background-image: image-url("kork.jpeg");
