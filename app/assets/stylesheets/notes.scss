@@ -1,3 +1,56 @@
 // Place all the styles related to the Notes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.post {
+    height: 200px;
+    width: 200px;
+    align-content: center;
+    text-align: center;
+
+    shape-outside: image-url("post.png");
+    shape-image-threshold: 0.5;
+    background-image: image-url("post.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 9px;
+
+}
+
+.post > p {
+
+  padding-top: 25px;
+  padding-right: 35px;
+  padding-left: 10px;
+  transform: rotate(-2.5deg);
+}
+
+.new {
+
+    height: 160px;
+    align-content: center;
+    text-align: center;
+    padding: 20px;
+
+    border-style: dotted;
+    border-width: 4px;
+    border-radius: 5px;
+
+    font-size: 22px;
+
+}
+
+
+
+.board {
+ background-image: image-url("kork.jpeg");
+}
+
+.header {
+    text-align: center;
+    font-size: 24px;
+    color: "black";
+    text-shadow: 2px 2px 2px;
+    background-color: "white";
+    border-radius: 5px;
+
+}

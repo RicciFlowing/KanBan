@@ -2,27 +2,26 @@
 
 <h1>Listing Notes</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Date</th>
-      <th>Text</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+<div class="board row">
+  <div class="header">
+    <div class="col-md-4" > To Do </div>
+    <div class="col-md-4"> Progress </div>
+    <div class="col-md-4"> Done </div>
+  </div>
+  <div class= "todo-container">
+    <div class="col-md-4">
+      <% @notes.each do |note| %>
+        <div class="post" >
+          <p> <%= note.text %> </p>
+          <%= link_to 'Show', note %>
+          <%= link_to 'Edit', edit_note_path(note) %>
+          <%= link_to 'Destroy', note, method: :delete, data: { confirm: 'Are you sure?' } %>
+        </div>
+        <%end%>
+    </div>
+  </div>
+</div>
 
-  <tbody>
-    <% @notes.each do |note| %>
-      <tr>
-        <td><%= note.date %></td>
-        <td><%= note.text %></td>
-        <td><%= link_to 'Show', note %></td>
-        <td><%= link_to 'Edit', edit_note_path(note) %></td>
-        <td><%= link_to 'Destroy', note, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
 
 <br>
 
