@@ -13,7 +13,6 @@
       <div class="col-md-4 post">
           <%= link_to image_tag("delete_cross.png", class: "delete-icon"), note, method: :delete, data: { confirm: 'Are you sure?'}, class:"delete-link" %>
           <p> <%= note.text %> </p>
-
       </div>
       <%end%>
   </div>
@@ -21,6 +20,5 @@
 
 
 <br>
-
-<%= link_to 'New Note', new_note_path %>
+<%= render 'form'%>
 <div>Icons made by <a href="http://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>             is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
