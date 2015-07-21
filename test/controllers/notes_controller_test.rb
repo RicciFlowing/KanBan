@@ -29,15 +29,6 @@ class NotesControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  test "should get edit" do
-    get :edit, id: @note
-    assert_response :success
-  end
-
-  test "should update note" do
-    patch :update, id: @note, note: { date: @note.date, text: @note.text }
-    assert_redirected_to note_path(assigns(:note))
-  end
 
   test "should destroy note" do
     assert_difference('Note.count', -1) do

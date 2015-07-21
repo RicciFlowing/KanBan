@@ -15,12 +15,9 @@ class NotesController < ApplicationController
 
   # GET /notes/new
   def new
-    @note = Note.new
+    @new_note = Note.new
   end
 
-  # GET /notes/1/edit
-  def edit
-  end
 
   # POST /notes
   # POST /notes.json
