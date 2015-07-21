@@ -1,5 +1,5 @@
 <div class="row">
-  <div class="col-md-4 col-md-offset-4 new"> Neue Notiz:
+  <div class="col-md-4 col-md-offset-4 new form-inline"> Neue Notiz:
 <%= form_for(@new_note) do |f| %>
   <% if @new_note.errors.any? %>
     <div id="error_explanation">
@@ -12,15 +12,14 @@
       </ul>
     </div>
   <% end %>
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css"> 
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
   <div class="field">
     <%= f.label :text %><br>
     <%= f.text_field :text, class:"form-control" %>
   </div>
   <div class="field">
     <%= f.label :date %><br>
-    <div class="date"> </div>
-    <%= f.hidden_field :date, class:"form-control", id: "hidden_date" %>
+    <%= f.text_field :date, class:"form-control date" %>
   </div>
   <div class="actions">
     <%= f.submit "Neue Notiz erstellen", class:"btn btn-default new-send" %>

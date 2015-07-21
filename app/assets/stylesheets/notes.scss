@@ -7,8 +7,6 @@
     align-content: center;
     text-align: center;
 
-    shape-outside: image-url("post.png");
-    shape-image-threshold: 0.5;
     background-image: image-url("post.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -17,26 +15,21 @@
 }
 
 .post > p {
-
+  padding-right: 41%;
+  padding-left: 41%;
   padding-top: 25px;
-  padding-right: 35px;
-  padding-left: 10px;
   transform: rotate(-2.5deg);
 }
 
 .new {
 
     height: auto;
-    align-content: center;
     text-align: center;
     padding: 20px;
 
     border-style: dotted;
     border-width: 4px;
     border-radius: 5px;
-
-    font-size: 22px;
-
 }
 
 .delete-icon {
@@ -62,5 +55,4 @@
     text-shadow: 2px 2px 2px;
     background-color: "white";
     border-radius: 5px;
-
 }
