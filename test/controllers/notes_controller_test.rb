@@ -21,7 +21,7 @@ class NotesControllerTest < ActionController::TestCase
       post :create, note: { date: @note.date, text: @note.text }
     end
 
-    assert_redirected_to note_path(assigns(:note))
+    assert_redirected_to notes_path
   end
 
   test "should show note" do
