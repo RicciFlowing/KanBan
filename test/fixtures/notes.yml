@@ -1,9 +1,9 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  date: MyString
+  date: 11.22.34
   text: MyString
 
 two:
-  date: MyString
-  text: MyString
+  date: 12.30.12
+  text: MyString2
